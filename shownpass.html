@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // function checkpass(){
+        //     let pass = document.getElementById('pass');
+        //     $(document).ready(function(){
+        //         $('#check').click(function(){
+        //             if(pass.type == "password"){
+        //                 pass.type ="text"
+        //                 return false
+        //             }else{
+        //                 pass.type ="password"
+        //                 return false
+        //             }
+        //         })
+        //     })
+        // }
+
+        function checkpass(){
+            let pass = document.getElementById('pass');
+            if(pass.type == "password"){
+                pass.type = "text"
+                return false
+            }if(pass.type == "text") {
+                pass.type = "password"
+                return false
+            } 
+        }
+    </script>
+</head>
+<body>
+    <label for="">Enter the password</label>
+    <input type="password" placeholder="enter the pass" id="pass">
+    <br>
+    <input type="checkbox" id="check" onclick="return checkpass()"> show password
+</body>
+</html>

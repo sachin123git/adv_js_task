@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 300px;
+        }
+    </style>
+    <script>function result(){
+        let num1 = document.getElementById('num1').value
+         let num2 = document.getElementById('num2').value
+          let num3 = document.getElementById('num3').value
+           let num4 = document.getElementById('num4').value
+            let num5 = document.getElementById('num5').value
+             let num6 = document.getElementById('num6').value
+              let num7 = document.getElementById('num7').value
+
+              num1 = parseInt(num1)
+              num2 = parseInt(num2)
+              num3 = parseInt(num3)
+              num4 = parseInt(num4)
+              num5 = parseInt(num5)
+              num6 = parseInt(num6)
+              num7 = parseInt(num7)
+
+              let total = num1 + num2 + num3 + num4 + num5 + num6 + num7;
+              document.getElementById('p1').innerHTML="the total is--->"+total;
+              let avg = total*100/700
+              document.getElementById('p2').innerHTML="the avg is--->"+avg;
+    }
+    </script>
+</head>
+<body><div class="container">
+    <label for="">1. C Language</label>
+    <input type="text" id="num1">
+    <br>
+     <label for="">2. C++ Language</label>
+    <input type="text" id="num2">
+     <br>
+     <label for="">3. Database</label>
+    <input type="text" id="num3">
+     <br>
+     <label for="">4. HTML</label>
+    <input type="text" id="num4" >
+     <br>
+     <label for="">5. CSS</label>
+    <input type="text" id="num5">
+     <br>
+     <label for="">6.PHP</label>
+    <input type="text" id="num6">
+     <br>
+     <label for="">7. Core java</label>
+    <input type="text" id="num7">
+     <br>
+    <button onclick="return result()">result</button>
+     <br>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    </div>
+</body>
+</html>
